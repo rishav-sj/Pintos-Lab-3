@@ -99,8 +99,8 @@ start_process (void *file_name_)
  
   if(success) 
   {
-    //tmp_scratch = palloc_get_page(0);
-    tmp_scratch=frame_alloc();
+    tmp_scratch = palloc_get_page(0);
+    //tmp_scratch=frame_alloc();
     
     if(!tmp_scratch)
        success = false;
